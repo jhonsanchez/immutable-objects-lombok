@@ -5,10 +5,12 @@ import com.sanchez.persona.entity.Persona;
 import com.sanchez.persona.entity.PersonaJpaEntity;
 import com.sanchez.persona.entity.PersonaJpaEntityRepository;
 
+import javax.inject.Named;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Named
 public class PersonaEntityGatewayImpl implements PersonaEntityGateway {
     private final PersonaJpaEntityRepository repository;
 

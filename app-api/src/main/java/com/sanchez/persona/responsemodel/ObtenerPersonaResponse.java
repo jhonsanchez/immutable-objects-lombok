@@ -1,7 +1,9 @@
 package com.sanchez.persona.responsemodel;
 
 import lombok.Builder;
+import javax.annotation.concurrent.Immutable;
 
+@Immutable
 public class ObtenerPersonaResponse {
     private final String nombre;
     private final String apellidoPaterno;

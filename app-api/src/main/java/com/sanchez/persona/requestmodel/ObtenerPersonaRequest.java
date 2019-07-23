@@ -1,5 +1,9 @@
 package com.sanchez.persona.requestmodel;
 
+
+import javax.annotation.concurrent.Immutable;
+
+@Immutable
 public class ObtenerPersonaRequest {
     private final String tipoDocumento;
     private final String nroDocumento;
