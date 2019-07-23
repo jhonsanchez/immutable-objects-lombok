@@ -11,5 +11,5 @@ public interface PersonaEntityGateway {
 
     void guardar(Persona persona);
 
-    Optional<Persona> buscarUno(Documento documento);
+    Optional<Persona> buscarPersona(Documento documento);
 }

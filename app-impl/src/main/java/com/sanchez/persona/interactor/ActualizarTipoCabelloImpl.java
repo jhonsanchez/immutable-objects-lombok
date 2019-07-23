@@ -23,7 +23,7 @@ public class ActualizarTipoCabelloImpl implements ActualizarTipoCabello {
 
     @Override
     public ActualizarTipoCabelloResponse actualizar(ActualizarTipoCabelloRequest request) {
-        Persona persona = gateway.buscarUno(
+        Persona persona = gateway.buscarPersona(
                 Documento.builder()
                         .nroDocumento(request.getNroDocumento())
                         .tipoDocumento(TipoDocumento.valueOf(request.getTipoDocumento()))

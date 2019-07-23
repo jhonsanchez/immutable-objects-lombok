@@ -28,7 +28,7 @@ public class PersonaEntityGatewayImpl implements PersonaEntityGateway {
         repository.save(PersonaJpaEntity.fromDomain(persona));
     }
 
-    public Optional<Persona> buscarUno(Documento documento) {
+    public Optional<Persona> buscarPersona(Documento documento) {
         return repository.findByTipoDocumentoAndNroDocumento(documento.tipoDocumento().toString(),documento.nroDocumento())
                 .map(PersonaJpaEntity::toDomain);
     }
